@@ -66,3 +66,6 @@ def grade(a):
         print("Grade: D")
     else a0.6:
         print("Grade: F")
+score=float(input("Enter the score: "))
+
+grade(score)
