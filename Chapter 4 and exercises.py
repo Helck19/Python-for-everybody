@@ -55,17 +55,30 @@ parameter_b=float(input("enter the normal rate per hour: "))
 computepay(parameter_a, parameter_b)
 
 def grade(a):
+    try:
+        a=float(a)
+    except ValueError:
+        print("Bad score")
+        return
+    
     a=float(a)
-    if a>=0.9:
+    if a > 1 or a <0:
+        print("Bad score")
+    elif a>=0.9:
         print("Grade: A")
     elif a>=0.8:
         print("Grade: B")
     elif a>=0.7:
         print("Grade: C")
-    elif a>0.6:
+    elif a>=0.6:
         print("Grade: D")
-    else a0.6:
+    elif a<0.6:
         print("Grade: F")
-score=float(input("Enter the score: "))
+    else:
+        print("Bad score")
+        
+
+score=input("Enter the score: ")
 
 grade(score)
+
