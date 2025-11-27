@@ -45,4 +45,13 @@ def count(word, letter_to_find):
 
 count("banana", "a")
 
+#%%Counting letters in a word
+word=input("Please enter the word that you wish to count the letters: ").lower()
+
+for i in set(word):
+    count=word.count(i)
+    print("The number of times the letter: ", i, "appears in the word", word,"is: ", count)
+
+
+
   
